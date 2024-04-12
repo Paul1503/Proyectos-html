@@ -1,0 +1,62 @@
+<!--
+    Crea un formulario con un campo de tipo busqueda, 
+    telefono, hora, url, barra de progreso , lista de datos ,submit y reset.
+
+    todos los campos deberan tener un label.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projecto 23 - Paul Arellano</title>
+</head>
+
+<body>
+    <h1>Formulario de búsqueda</h1>
+
+    <fieldset>
+        <legend>Búsqueda</legend>
+        <form action="" method="get">
+            <label for="">Ingrese búsqueda: <input type="search" name="busqueda" id="busqueda"
+                    placeholder="Ingrese"></label>
+            <br>
+            <label for=""></label>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Datos personales</legend>
+        <form action="" method="get">
+            <label for="">Telefono: <input type="tel" name="telefono" id="telefono"
+                    placeholder="Ingrese telefono"></label>
+            <label for="">Hora: <input type="time" name="hora" id="hora" placeholder="Hora"></label>
+            <label for="">Url: <input type="url" name="url" id="url" placeholder="Url"></label>
+
+    </fieldset>
+    <br>
+    <label for="">Barra de progreso<progress id="file" max="100" value="70">70%</progress></label>
+
+    <fieldset>
+        <h2>Listado de datos</h2>
+        <label for="listado">listado de coches:</label>
+        <input list="listado" name="listado">
+
+        <datalist id="listado">
+            <option value="Audi"></option>
+            <option value="Mercedes"></option>
+            <option value="BMW"></option>
+            <option value="Renault"></option>
+        </datalist>
+        <br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="borrar">
+    </fieldset>
+    </form>
+
+
+</body>
+
+</html>

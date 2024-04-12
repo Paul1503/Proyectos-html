@@ -1,0 +1,72 @@
+<!--
+    Crea un formulario con un campo de tipo TEXTAREA, EMAIL,CONTRASEÑA,
+    RADIO, SELECT, CHECKBOX , FICHERO, FECHA , NUMERO, COLOR, SUBMIT
+    TODOS LOS CAMPOS DEBERAN ESTAR DENTRO DE UN FIELDSET Y USAR EL CAMPO LEGEND.
+    TODOS LOS CAMPOS DEBERÁN TENER UN LABEL
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 22 - Paul Arellano</title>
+</head>
+<body>
+    <h1>Formulario.</h1>
+
+    <form action="" method="post">
+        <fieldset>
+            <legend>Información personal </legend>
+
+            <label for="email">Ingrese su email:</label>
+            <input type="email" placeholder="Ingrese su email" id="email">
+            <br>
+            <label for="contrasena">Ingrese su contraseña:</label>
+            <input type="password" placeholder="Ingrese su contraseña" id="contrasena">
+            <br>
+            
+            <p>Su lenguaje favorito es:</p>
+            <input type="radio" id="html" name="fav_lenguaje" value="HTML">
+            <label for="html">html</label>
+            <br>
+            <input type="radio" id="css" name="fav_lenguaje" value="CSS">
+            <label for="css">CSS</label>
+            <br>
+            <input type="radio" id="css" name="fav_lenguaje" value="Javascript">
+            <label for="Javascript">Javascript</label>
+
+            <p>El lenguaje que más maneja es: </p>
+            <select name="select" id="">
+                <option value="Java">java</option>
+                <option value="Python" selected>Python</option>
+                <option value="C#">C#</option>
+            </select>
+
+            <p>Indique en que lenguajes tiene experiencia progrmando:</p>
+            
+            <label for=""><input type="checkbox" id="cbo1" value="HTML">HTML</label>
+            <br>
+            <label for=""><input type="checkbox" id="cbo2" value="CSS">CSS</label>
+            <br>
+            <label for=""><input type="checkbox" id="cbo3" value="Javascript">Javascript</label>
+
+            <p>Indique su edad, color preferido y la fecha de hoy</p>
+            <label for="">edad</label>
+            <input type="number" max="120" min="5">
+            <br>
+            <label for="">Color preferido:</label>
+            <input type="color">
+            <br>
+            <label for="">Fecha de hoy:</label>
+            <input type="date">
+            <br>
+            <textarea name="descripcion"></textarea>
+
+            <br>
+            <input type="submit" value="enviar">
+
+        </fieldset>
+    </form>
+</body>
+</html>
